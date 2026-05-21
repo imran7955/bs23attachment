@@ -226,13 +226,13 @@ namespace FareEngineAssessment
     {
         static void Main(string[] args)
         {
-            Passenger p1 = new Passenger("P101", "Rahim");
+            Passenger passenger1 = new Passenger("P101", "Rahim");
 
             Vehicle car1 = new StandardCar("DHA-123", 50);
 
             IPromotion promo1 = new PercentageDiscount(10);
 
-            Trip trip1 = new Trip(car1, p1, 10, 20, promo1);
+            Trip trip1 = new Trip(car1, passenger1, 10, 20, promo1);
 
             decimal fare1 = trip1.CalculateFinalFare();
 
@@ -250,7 +250,7 @@ namespace FareEngineAssessment
 
             IPromotion promo2 = new FlatDiscount(200);
 
-            Trip trip2 = new Trip(car2, p1, 5, 15, promo2);
+            Trip trip2 = new Trip(car2, passenger1, 5, 15, promo2);
 
             decimal fare2 = trip2.CalculateFinalFare();
 
