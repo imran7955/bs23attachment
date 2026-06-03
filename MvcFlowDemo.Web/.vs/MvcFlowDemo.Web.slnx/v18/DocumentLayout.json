@@ -1,0 +1,231 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\bs23\\MvcFlowDemo.Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\domain\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\domain\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\mvcflowdemo.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\mvcflowdemo.web.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\views\\student\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\views\\student\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|c:\\bs23\\mvcflowdemo.web\\mvcflowdemo.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A48AE55A-25D1-CCCC-5EB6-3800C2C8FF50}|MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj|solutionrelative:mvcflowdemo.web\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Domain\\Department.cs",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Domain\\Department.cs",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Domain\\Department.cs",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Domain\\Department.cs",
+              "ViewState": "AgIAAAYAAACgZWZmZmYrwBEAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T11:09:32.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MvcFlowDemo.Web.csproj",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj",
+              "RelativeToolTip": "MvcFlowDemo.Web\\MvcFlowDemo.Web.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-03T11:06:35.155Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\appsettings.json",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\appsettings.json",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\appsettings.json",
+              "RelativeToolTip": "MvcFlowDemo.Web\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-03T10:58:31.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Views\\Student\\Create.cshtml",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Views\\Student\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T09:07:17.42Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Program.cs",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Program.cs",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Program.cs",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T07:13:16.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Models\\Student.cs",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Models\\Student.cs",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Models\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T08:29:10.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Views\\Student\\About.cshtml",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Views\\Student\\About.cshtml",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Views\\Student\\About.cshtml",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Views\\Student\\About.cshtml",
+              "ViewState": "AgIAAAMAAACANTMzMzMrwAkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T08:43:06.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T09:23:54.683Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T08:38:07.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-03T08:23:20.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T07:12:56.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-03T07:12:23.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "MvcFlowDemo.Web\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\bs23\\MvcFlowDemo.Web\\MvcFlowDemo.Web\\Properties\\launchSettings.json",
+              "RelativeToolTip": "MvcFlowDemo.Web\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-03T07:11:22.412Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
