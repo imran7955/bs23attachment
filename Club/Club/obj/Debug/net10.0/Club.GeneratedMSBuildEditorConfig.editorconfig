@@ -35,6 +35,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/IMRAN/Desktop/bs23attachment/Club/Club/Views/Academic/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNhZGVtaWNcRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/IMRAN/Desktop/bs23attachment/Club/Club/Views/Academic/_DashboardTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNhZGVtaWNcX0Rhc2hib2FyZFRhYmxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/IMRAN/Desktop/bs23attachment/Club/Club/Views/Committee/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWl0dGVlXEFkZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WEqStvk75s4=",
+  "dgSpecHash": "+IzayDl3nIo=",
   "success": true,
   "projectFilePath": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Club.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IMRAN\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
+    "C:\\Users\\IMRAN\\.nuget\\packages\\castle.core\\5.2.1\\castle.core.5.2.1.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\10.0.8\\microsoft.aspnetcore.diagnostics.entityframeworkcore.10.0.8.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.8.nupkg.sha512",
@@ -25,6 +26,7 @@
     "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\10.0.8\\microsoft.entityframeworkcore.abstractions.10.0.8.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\10.0.8\\microsoft.entityframeworkcore.analyzers.10.0.8.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.entityframeworkcore.design\\10.0.8\\microsoft.entityframeworkcore.design.10.0.8.nupkg.sha512",
+    "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.entityframeworkcore.proxies\\10.0.8\\microsoft.entityframeworkcore.proxies.10.0.8.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\10.0.8\\microsoft.entityframeworkcore.relational.10.0.8.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\10.0.8\\microsoft.entityframeworkcore.sqlserver.10.0.8.nupkg.sha512",
     "C:\\Users\\IMRAN\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\10.0.8\\microsoft.entityframeworkcore.tools.10.0.8.nupkg.sha512",

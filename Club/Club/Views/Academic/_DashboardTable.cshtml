@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Club.Domain.Student>
+
+<div class="alert alert-info py-2 d-flex justify-content-between align-items-center mb-3 animate__animated animate__fadeIn">
+    <span><strong>Active Database Pipeline Strategy:</strong> @ViewBag.StrategyUsed</span>
+    <span class="badge bg-dark">Timestamp: @DateTime.Now.ToString("mm:ss.fff")</span>
+</div>
+
+<table class="table table-hover table-bordered bg-white shadow-sm">
+    <thead class="table-dark">
+        <tr>
+            <th style="width: 30%;">Student Name</th>
+            <th style="width: 70%;">Enrolled Courses (Loaded dynamically via ORM)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td class="fw-bold text-primary align-middle">@student.Name</td>
+                <td>
+                    <div class="d-flex flex-wrap gap-2">
+                        @foreach (var course in student.Courses)
+                        {
+                            <span class="badge bg-light text-dark border p-2">
+                                <strong>@course.Name</strong> (@course.Credit Credits)
+                            </span>
+                        }
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

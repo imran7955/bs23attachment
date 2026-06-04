@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Club.Domain.Student>
+
+<div class="container mt-4" style="max-width: 900px;">
+    <div class="card shadow border-0">
+        <div class="card-header bg-gradient bg-primary text-white p-3">
+            <h3 class="mb-0">Single-Page Academic Performance Engine</h3>
+        </div>
+
+        <div class="card-body p-4">
+            <p class="text-muted">Click to update the table grid</p>
+
+            <div class="mb-4">
+                <button id="btnEager" class="btn btn-success btn-lg me-2 shadow-sm">
+                    ⚡ Eager Loading
+                </button>
+                <button id="btnLazy" class="btn btn-warning btn-lg shadow-sm text-dark">
+                    ⏳ Lazy Loading
+                </button>
+            </div>
+
+            <div id="tableContainer" class="mt-3">
+                <div class="text-center py-5 border rounded bg-light text-muted" style="font-style: italic;">
+                    No data pipeline active. Click a processing methodology above to pull database records live.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("btnEager").addEventListener("click", function () {
+            loadData("/Academic/FetchEagerData");
+        });
+
+        document.getElementById("btnLazy").addEventListener("click", function () {
+            loadData("/Academic/FetchLazyData");
+        });
+
+        function loadData(url) {
+            const container = document.getElementById("tableContainer");
+
+            // Show a visual loading pulse in the container grid area
+            container.innerHTML = `<div class="text-center py-5"><div class="spinner-border text-secondary" role="status"></div><p class="mt-2 text-muted">Running ORM Compilation Execution...</p></div>`;
+
+            // Request the precise data chunk from the server backend
+            fetch(url)
+                .then(response => response.text())
+                .then(htmlContents => {
+                    container.innerHTML = htmlContents;
+                })
+                .catch(error => {
+                    container.innerHTML = `<div class="alert alert-danger">Error executing data pipeline pipeline retrieval request.</div>`;
+                    console.error("Pipeline failure:", error);
+                });
+        }
+    </script>
+}

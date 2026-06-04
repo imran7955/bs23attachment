@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\models\\committeemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\models\\committeemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\views\\academic\\_dashboardtable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\views\\academic\\_dashboardtable.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\data\\migrations\\20260604065949_initialclubsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\data\\migrations\\20260604065949_initialclubsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\views\\academic\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\views\\academic\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\controllers\\academiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\controllers\\academiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\domain\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\domain\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\domain\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\controllers\\committeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\controllers\\committeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Data\\Migrations\\20260604103242_AddStudentCourseRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Club\\Data\\Migrations\\20260604103242_AddStudentCourseRelationship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\models\\inventoryitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\club.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\club.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\views\\committee\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,8 +59,16 @@
       "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\views\\committee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\controllers\\committeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\controllers\\committeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\models\\committeemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\models\\committeemember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\data\\migrations\\20260604065949_initialclubsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\data\\migrations\\20260604065949_initialclubsetup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|c:\\users\\imran\\desktop\\bs23attachment\\club\\club\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D7AC786-2B33-47C4-937C-029CF15DC085}|Club\\Club.csproj|solutionrelative:club\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,63 +78,152 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CommitteeMember.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Models\\CommitteeMember.cs",
-              "RelativeDocumentMoniker": "Club\\Models\\CommitteeMember.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Models\\CommitteeMember.cs",
-              "RelativeToolTip": "Club\\Models\\CommitteeMember.cs",
-              "ViewState": "AgIAAAQAAAAUmJmZmZk+wBMAAAABAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "CommitteeController.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Controllers\\CommitteeController.cs",
+              "RelativeDocumentMoniker": "Club\\Controllers\\CommitteeController.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Controllers\\CommitteeController.cs",
+              "RelativeToolTip": "Club\\Controllers\\CommitteeController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwBUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T05:50:24.368Z",
+              "WhenOpened": "2026-06-04T05:54:59.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Academic\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Club\\Views\\Academic\\Dashboard.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Academic\\Dashboard.cshtml",
+              "RelativeToolTip": "Club\\Views\\Academic\\Dashboard.cshtml",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwDkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-04T10:36:27.775Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Domain\\Student.cs",
+              "RelativeDocumentMoniker": "Club\\Domain\\Student.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Domain\\Student.cs",
+              "RelativeToolTip": "Club\\Domain\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T10:02:32.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Domain\\Course.cs",
+              "RelativeDocumentMoniker": "Club\\Domain\\Course.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Domain\\Course.cs",
+              "RelativeToolTip": "Club\\Domain\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T10:03:18.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AcademicController.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Controllers\\AcademicController.cs",
+              "RelativeDocumentMoniker": "Club\\Controllers\\AcademicController.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Controllers\\AcademicController.cs",
+              "RelativeToolTip": "Club\\Controllers\\AcademicController.cs",
+              "ViewState": "AgIAAGwAAAAAODMzMzP7v3UAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T10:34:34.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Club\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Club\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABQAAAAAAAAAAABiPSEAAAAtAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Club\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAABgAAAAwZmZmZuYwwCUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-04T06:07:21.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\appsettings.json",
-              "RelativeDocumentMoniker": "Club\\appsettings.json",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\appsettings.json",
-              "RelativeToolTip": "Club\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-04T05:44:36.163Z",
+              "DocumentIndex": 0,
+              "Title": "_DashboardTable.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Academic\\_DashboardTable.cshtml",
+              "RelativeDocumentMoniker": "Club\\Views\\Academic\\_DashboardTable.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Academic\\_DashboardTable.cshtml",
+              "RelativeToolTip": "Club\\Views\\Academic\\_DashboardTable.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-04T11:03:20.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Program.cs",
               "RelativeDocumentMoniker": "Club\\Program.cs",
               "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Program.cs",
               "RelativeToolTip": "Club\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAADANDMzMzMbwA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-04T05:45:05.651Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 10,
+              "Title": "InventoryItem.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Models\\InventoryItem.cs",
+              "RelativeDocumentMoniker": "Club\\Models\\InventoryItem.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Models\\InventoryItem.cs",
+              "RelativeToolTip": "Club\\Models\\InventoryItem.cs",
+              "ViewState": "AgIAAAEAAADAMjMzMzMrwA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T09:53:41.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Club.csproj",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Club.csproj",
+              "RelativeDocumentMoniker": "Club\\Club.csproj",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Club.csproj",
+              "RelativeToolTip": "Club\\Club.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-04T09:56:31.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20260604103242_AddStudentCourseRelationship.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Data\\Migrations\\20260604103242_AddStudentCourseRelationship.cs",
+              "RelativeDocumentMoniker": "Club\\Data\\Migrations\\20260604103242_AddStudentCourseRelationship.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Data\\Migrations\\20260604103242_AddStudentCourseRelationship.cs",
+              "RelativeToolTip": "Club\\Data\\Migrations\\20260604103242_AddStudentCourseRelationship.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-04T10:32:43.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "20260604065949_InitialClubSetup.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Data\\Migrations\\20260604065949_InitialClubSetup.cs",
               "RelativeDocumentMoniker": "Club\\Data\\Migrations\\20260604065949_InitialClubSetup.cs",
@@ -110,57 +231,68 @@
               "RelativeToolTip": "Club\\Data\\Migrations\\20260604065949_InitialClubSetup.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T06:59:50.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-04T06:59:50.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Club\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "Club\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAQAAAAAzszMzMwQwA8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAzszMzMwQwBMAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-04T05:57:28.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CommitteeController.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Controllers\\CommitteeController.cs",
-              "RelativeDocumentMoniker": "Club\\Controllers\\CommitteeController.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Controllers\\CommitteeController.cs",
-              "RelativeToolTip": "Club\\Controllers\\CommitteeController.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAiwBUAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "CommitteeMember.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Models\\CommitteeMember.cs",
+              "RelativeDocumentMoniker": "Club\\Models\\CommitteeMember.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Models\\CommitteeMember.cs",
+              "RelativeToolTip": "Club\\Models\\CommitteeMember.cs",
+              "ViewState": "AgIAAAQAAAAUmJmZmZk+wBMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-04T05:54:59.117Z"
+              "WhenOpened": "2026-06-04T05:50:24.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Committee\\Index.cshtml",
               "RelativeDocumentMoniker": "Club\\Views\\Committee\\Index.cshtml",
               "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Committee\\Index.cshtml",
               "RelativeToolTip": "Club\\Views\\Committee\\Index.cshtml",
-              "ViewState": "AgIAADUAAADgzMzMzMwnwDoAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-04T06:01:38.145Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "Add.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Committee\\Add.cshtml",
               "RelativeDocumentMoniker": "Club\\Views\\Committee\\Add.cshtml",
               "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\Views\\Committee\\Add.cshtml",
               "RelativeToolTip": "Club\\Views\\Committee\\Add.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAACg/v////8gwBkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-04T06:02:38.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\appsettings.json",
+              "RelativeDocumentMoniker": "Club\\appsettings.json",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\Club\\Club\\appsettings.json",
+              "RelativeToolTip": "Club\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-04T05:44:36.163Z"
             }
           ]
         }

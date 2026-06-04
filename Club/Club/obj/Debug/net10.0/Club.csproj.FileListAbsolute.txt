@@ -290,3 +290,5 @@ C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\obj\Debug\net10.0\refint\Club.dl
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\obj\Debug\net10.0\Club.pdb
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\obj\Debug\net10.0\Club.genruntimeconfig.cache
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\obj\Debug\net10.0\ref\Club.dll
+C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Castle.Core.dll
+C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Proxies.dll
