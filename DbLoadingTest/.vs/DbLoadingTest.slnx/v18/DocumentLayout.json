@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|c:\\users\\imran\\desktop\\bs23attachment\\dbloadingtest\\dbloadingtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|solutionrelative:dbloadingtest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|c:\\users\\imran\\desktop\\bs23attachment\\dbloadingtest\\dbloadingtest\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|solutionrelative:dbloadingtest\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|c:\\users\\imran\\desktop\\bs23attachment\\dbloadingtest\\dbloadingtest\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|solutionrelative:dbloadingtest\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|c:\\users\\imran\\desktop\\bs23attachment\\dbloadingtest\\dbloadingtest\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|solutionrelative:dbloadingtest\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|c:\\users\\imran\\desktop\\bs23attachment\\dbloadingtest\\dbloadingtest\\dbloadingtest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|solutionrelative:dbloadingtest\\dbloadingtest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|c:\\users\\imran\\desktop\\bs23attachment\\dbloadingtest\\dbloadingtest\\migrations\\20260605115918_initialdbsetupforloadingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D85A011-7B5C-495C-226E-FC70C731B024}|DbLoadingTest\\DbLoadingTest.csproj|solutionrelative:dbloadingtest\\migrations\\20260605115918_initialdbsetupforloadingtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20260605115918_InitialDbSetupForLoadingTest.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\Migrations\\20260605115918_InitialDbSetupForLoadingTest.cs",
+              "RelativeDocumentMoniker": "DbLoadingTest\\Migrations\\20260605115918_InitialDbSetupForLoadingTest.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\Migrations\\20260605115918_InitialDbSetupForLoadingTest.cs",
+              "RelativeToolTip": "DbLoadingTest\\Migrations\\20260605115918_InitialDbSetupForLoadingTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:59:18.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbLoadingTest.csproj",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\DbLoadingTest.csproj",
+              "RelativeDocumentMoniker": "DbLoadingTest\\DbLoadingTest.csproj",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\DbLoadingTest.csproj",
+              "RelativeToolTip": "DbLoadingTest\\DbLoadingTest.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-05T11:11:57.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\Student.cs",
+              "RelativeDocumentMoniker": "DbLoadingTest\\Student.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\Student.cs",
+              "RelativeToolTip": "DbLoadingTest\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:12:43.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\Course.cs",
+              "RelativeDocumentMoniker": "DbLoadingTest\\Course.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\Course.cs",
+              "RelativeToolTip": "DbLoadingTest\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:12:07.272Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "DbLoadingTest\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\ApplicationDbContext.cs",
+              "RelativeToolTip": "DbLoadingTest\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAiwBwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:03:07.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\Program.cs",
+              "RelativeDocumentMoniker": "DbLoadingTest\\Program.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\DbLoadingTest\\DbLoadingTest\\Program.cs",
+              "RelativeToolTip": "DbLoadingTest\\Program.cs",
+              "ViewState": "AgIAABUAAAAAHTMzMzP7vxoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T11:00:14.947Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
