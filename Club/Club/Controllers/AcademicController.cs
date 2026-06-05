@@ -24,37 +24,6 @@ namespace Club.Controllers
             // Returns the single-page application framework without running partial pipelines instantly
             return View();
         }
-
-        // =========================================================================
-        // PIPELINE 1: Eager Loading (Dashboard View)
-        // =========================================================================
-        public IActionResult EagerDashboard()
-        {
-            // We use .Include() to instruct EF Core to write an explicit SQL JOIN.
-            // This pulls all students and all their corresponding courses in exactly 1 database hit.
-            var studentDashboardData = _context.Students
-                .Include(s => s.Courses)
-                .ToList();
-
-            ViewBag.Strategy = "Eager Loading (Single SQL JOIN Command)";
-            return View("Dashboard", studentDashboardData);
-        }
-
-        // =========================================================================
-        // PIPELINE 2: Lazy Loading (Deferred Processing View)
-        // =========================================================================
-        public IActionResult LazyDashboard()
-        {
-            // Notice there is NO .Include() here. 
-            // Query 1: EF Core initially queries ONLY the basic Student table.
-            var students = _context.Students.ToList();
-
-            // When the Razor view starts looping through each student and accesses '.Courses',
-            // EF Core will fire an independent hidden SQL query for EVERY single student row.
-            ViewBag.Strategy = "Lazy Loading (Deferred Proxy Queries)";
-            return View("Dashboard", students);
-        }
-
         // GET: /Academic/SeedData
         public IActionResult SeedData()
         {

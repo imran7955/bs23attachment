@@ -9,6 +9,7 @@ C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Club.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Club.pdb
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Azure.Core.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Azure.Identity.dll
+C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Castle.Core.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Humanizer.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -26,6 +27,7 @@ C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.Data
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Proxies.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
@@ -290,5 +292,3 @@ C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\obj\Debug\net10.0\refint\Club.dl
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\obj\Debug\net10.0\Club.pdb
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\obj\Debug\net10.0\Club.genruntimeconfig.cache
 C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\obj\Debug\net10.0\ref\Club.dll
-C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Castle.Core.dll
-C:\Users\IMRAN\Desktop\bs23attachment\Club\Club\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Proxies.dll

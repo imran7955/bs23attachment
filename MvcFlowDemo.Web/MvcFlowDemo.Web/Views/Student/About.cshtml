@@ -1,0 +1,19 @@
+﻿@model List<MvcFlowDemo.Models.Student>
+<h2>Student List</h2><table border="1" cellpadding="10">
+
+<tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Department</th>
+</tr>
+
+@foreach (var student in Model)
+{
+    <tr>
+        <td>@student.Id</td>
+        <td>@student.Name</td>
+        <td>@student.Department</td>
+    </tr>
+
+}
+</table>
