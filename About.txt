@@ -1,3 +1,4 @@
 MvcFlowDemo.Web --> Simple project to understand MVC Flow
 Club --> Connect With Database
 DbLoadingTest --> To observe the lazy loading, eager loading
+EfCore --> To observe the automatic updates in the database table of the related entity by changes in the other table. 
