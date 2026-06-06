@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|c:\\users\\imran\\desktop\\bs23attachment\\efcore\\efcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|solutionrelative:efcore\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|c:\\users\\imran\\desktop\\bs23attachment\\efcore\\efcore\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|solutionrelative:efcore\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|c:\\users\\imran\\desktop\\bs23attachment\\efcore\\efcore\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|solutionrelative:efcore\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|c:\\users\\imran\\desktop\\bs23attachment\\efcore\\efcore\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|solutionrelative:efcore\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|c:\\users\\imran\\desktop\\bs23attachment\\efcore\\efcore\\efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EF64CF81-26E3-A71B-17E7-E4E748E379A0}|EfCore\\EfCore.csproj|solutionrelative:efcore\\efcore.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EfCore.csproj",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\EfCore.csproj",
+              "RelativeDocumentMoniker": "EfCore\\EfCore.csproj",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\EfCore.csproj",
+              "RelativeToolTip": "EfCore\\EfCore.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-05T12:34:19.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "EfCore\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\ApplicationDbContext.cs",
+              "RelativeToolTip": "EfCore\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T12:34:33.367Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\Course.cs",
+              "RelativeDocumentMoniker": "EfCore\\Course.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\Course.cs",
+              "RelativeToolTip": "EfCore\\Course.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T12:33:14.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\Student.cs",
+              "RelativeDocumentMoniker": "EfCore\\Student.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\Student.cs",
+              "RelativeToolTip": "EfCore\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T12:32:28.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\Program.cs",
+              "RelativeDocumentMoniker": "EfCore\\Program.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\EfCore\\EfCore\\Program.cs",
+              "RelativeToolTip": "EfCore\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-05T12:32:13.237Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
