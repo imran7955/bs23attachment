@@ -37,7 +37,8 @@
                 </div>
 
                 <div class="mb-4 p-3 bg-light rounded border">
-                    <label class="form-label fw-bold text-dark d-block mb-2">Assign Instructors <small class="text-muted fw-normal">(Select all that apply)</small></label>
+                    <label class="form-label fw-bold text-dark d-block mb-1">Assign Instructors</label>
+                    <small class="text-muted d-block mb-3">(Search and select all faculty that apply to this track)</small>
 
                     @if (!instructors.Any())
                     {
@@ -45,13 +46,18 @@
                     }
                     else
                     {
-                        <div class="row row-cols-1 row-cols-sm-2 g-2" style="max-height: 150px; overflow-y: auto;">
+                        <div class="input-group input-group-sm mb-3 shadow-sm">
+                            <span class="input-group-text bg-white border-end-0 text-muted">🔍</span>
+                            <input type="text" id="instructorSearchBox" class="form-control border-start-0 ps-0" placeholder="Type name to filter instructors instantly..." onkeyup="filterInstructorCheckboxes()" />
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-sm-2 g-2" id="instructorChecklistGrid" style="max-height: 160px; overflow-y: auto; padding-right: 4px;">
                             @foreach (var inst in instructors)
                             {
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" name="selectedInstructors" value="@inst.Id" id="inst_@inst.Id">
-                                        <label class="form-check-label small text-dark" for="inst_@inst.Id">
+                                <div class="col instructor-row-item" data-name="@inst.Name.ToLower()">
+                                    <div class="form-check p-2 border rounded bg-white h-100 transition-all custom-check-card">
+                                        <input class="form-check-input ms-1 me-2 mt-1" type="checkbox" name="selectedInstructors" value="@inst.Id" id="inst_@inst.Id">
+                                        <label class="form-check-label small text-dark streaming-truncation-target ps-1" for="inst_@inst.Id" style="cursor: pointer;">
                                             👤 @inst.Name
                                         </label>
                                     </div>
@@ -69,3 +75,40 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Pure JavaScript instant filter execution engine
+    function filterInstructorCheckboxes() {
+        const input = document.getElementById('instructorSearchBox').value.toLowerCase();
+        const rows = document.getElementsByClassName('instructor-row-item');
+
+        for (let i = 0; i < rows.length; i++) {
+            const nameAttr = rows[i].getAttribute('data-name');
+            if (nameAttr.includes(input)) {
+                rows[i].style.display = "";
+            } else {
+                rows[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+<style>
+    .custom-check-card {
+        transition: border-color 0.2s, background-color 0.2s;
+    }
+
+        .custom-check-card:hover {
+            border-color: #0d6efd !important;
+            background-color: #f8fafc !important;
+        }
+
+    .streaming-truncation-target {
+        display: inline-block;
+        max-width: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        vertical-align: middle;
+    }
+</style>

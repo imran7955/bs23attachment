@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\domain\\coursematerial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\domain\\coursematerial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\views\\instructor\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\views\\instructor\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\views\\instructor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\views\\instructor\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\views\\instructor\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\views\\instructor\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\views\\course\\viewcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\views\\course\\viewcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\domain\\coursematerial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\domain\\coursematerial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\models\\bulksyllabussubmissionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\models\\bulksyllabussubmissionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\domain\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -31,20 +51,8 @@
       "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\controllers\\instructorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\data\\migrations\\20260608094546_adddescriptiontocourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\data\\migrations\\20260608094546_adddescriptiontocourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\views\\instructor\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\views\\instructor\\createcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\views\\instructor\\managesyllabus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|solutionrelative:lmsproject\\views\\instructor\\managesyllabus.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C35F30D2-F6E7-C976-472F-F56CCA7F20B1}|LmsProject\\LmsProject.csproj|c:\\users\\imran\\desktop\\bs23attachment\\lmsproject\\lmsproject\\models\\courseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,8 +82,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InstructorController.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Controllers\\InstructorController.cs",
+              "RelativeDocumentMoniker": "LmsProject\\Controllers\\InstructorController.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Controllers\\InstructorController.cs",
+              "RelativeToolTip": "LmsProject\\Controllers\\InstructorController.cs",
+              "ViewState": "AgIAAOUAAAAAAAAAAAAqwPoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T06:00:16.077Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -84,62 +104,98 @@
               "RelativeDocumentMoniker": "LmsProject\\Views\\Instructor\\Dashboard.cshtml",
               "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\Dashboard.cshtml",
               "RelativeToolTip": "LmsProject\\Views\\Instructor\\Dashboard.cshtml",
-              "ViewState": "AgIAACIAAAAAPTMzMzMLwHQAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAwwHQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-06-08T06:05:57.932Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewCourses.cshtml",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Course\\ViewCourses.cshtml",
-              "RelativeDocumentMoniker": "LmsProject\\Views\\Course\\ViewCourses.cshtml",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Course\\ViewCourses.cshtml",
-              "RelativeToolTip": "LmsProject\\Views\\Course\\ViewCourses.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAADgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-08T05:57:26.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "LmsProject\\Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "LmsProject\\Controllers\\CourseController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T05:55:12.006Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Domain\\Course.cs",
-              "RelativeDocumentMoniker": "LmsProject\\Domain\\Course.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Domain\\Course.cs",
-              "RelativeToolTip": "LmsProject\\Domain\\Course.cs",
-              "ViewState": "AgIAAAQAAACA/////385wA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T05:24:13.866Z"
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Course\\Details.cshtml",
+              "RelativeDocumentMoniker": "LmsProject\\Views\\Course\\Details.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Course\\Details.cshtml",
+              "RelativeToolTip": "LmsProject\\Views\\Course\\Details.cshtml",
+              "ViewState": "AgIAAK8AAAAAAAAAAAAwwM4AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-08T10:35:13.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "CourseMaterial.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Domain\\CourseMaterial.cs",
               "RelativeDocumentMoniker": "LmsProject\\Domain\\CourseMaterial.cs",
               "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Domain\\CourseMaterial.cs",
               "RelativeToolTip": "LmsProject\\Domain\\CourseMaterial.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T05:26:01.363Z",
+              "WhenOpened": "2026-06-08T05:26:01.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewCourses.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Course\\ViewCourses.cshtml",
+              "RelativeDocumentMoniker": "LmsProject\\Views\\Course\\ViewCourses.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Course\\ViewCourses.cshtml",
+              "RelativeToolTip": "LmsProject\\Views\\Course\\ViewCourses.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAYwIMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-08T05:57:26.484Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\CreateCourse.cshtml",
+              "RelativeDocumentMoniker": "LmsProject\\Views\\Instructor\\CreateCourse.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\CreateCourse.cshtml",
+              "RelativeToolTip": "LmsProject\\Views\\Instructor\\CreateCourse.cshtml",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAwwHEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-08T06:07:10.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditCourse.cshtml",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\EditCourse.cshtml",
+              "RelativeDocumentMoniker": "LmsProject\\Views\\Instructor\\EditCourse.cshtml",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\EditCourse.cshtml",
+              "RelativeToolTip": "LmsProject\\Views\\Instructor\\EditCourse.cshtml",
+              "ViewState": "AgIAAHcAAAAAZmZmZmYcwIwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-06-08T09:30:40.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "LmsProject\\Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "LmsProject\\Controllers\\CourseController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T05:55:12.006Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BulkSyllabusSubmissionModel.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Models\\BulkSyllabusSubmissionModel.cs",
+              "RelativeDocumentMoniker": "LmsProject\\Models\\BulkSyllabusSubmissionModel.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Models\\BulkSyllabusSubmissionModel.cs",
+              "RelativeToolTip": "LmsProject\\Models\\BulkSyllabusSubmissionModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T11:51:31.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Instructor.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Domain\\Instructor.cs",
               "RelativeDocumentMoniker": "LmsProject\\Domain\\Instructor.cs",
@@ -151,7 +207,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Domain\\Course.cs",
+              "RelativeDocumentMoniker": "LmsProject\\Domain\\Course.cs",
+              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Domain\\Course.cs",
+              "RelativeToolTip": "LmsProject\\Domain\\Course.cs",
+              "ViewState": "AgIAAAQAAACA/////385wA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T05:24:13.866Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Program.cs",
               "RelativeDocumentMoniker": "LmsProject\\Program.cs",
@@ -163,19 +231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "InstructorController.cs",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Controllers\\InstructorController.cs",
-              "RelativeDocumentMoniker": "LmsProject\\Controllers\\InstructorController.cs",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Controllers\\InstructorController.cs",
-              "RelativeToolTip": "LmsProject\\Controllers\\InstructorController.cs",
-              "ViewState": "AgIAAJMAAACgZmZmZmYkwJ0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-08T06:00:16.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "20260608094546_AddDescriptionToCourse.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Data\\Migrations\\20260608094546_AddDescriptionToCourse.cs",
               "RelativeDocumentMoniker": "LmsProject\\Data\\Migrations\\20260608094546_AddDescriptionToCourse.cs",
@@ -187,31 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CreateCourse.cshtml",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\CreateCourse.cshtml",
-              "RelativeDocumentMoniker": "LmsProject\\Views\\Instructor\\CreateCourse.cshtml",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\CreateCourse.cshtml",
-              "RelativeToolTip": "LmsProject\\Views\\Instructor\\CreateCourse.cshtml",
-              "ViewState": "AgIAACsAAAAgMzMzMzMbwEYAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-08T06:07:10.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ManageSyllabus.cshtml",
-              "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\ManageSyllabus.cshtml",
-              "RelativeDocumentMoniker": "LmsProject\\Views\\Instructor\\ManageSyllabus.cshtml",
-              "ToolTip": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Instructor\\ManageSyllabus.cshtml",
-              "RelativeToolTip": "LmsProject\\Views\\Instructor\\ManageSyllabus.cshtml",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFAAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-08T09:30:40.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "CourseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Models\\CourseViewModel.cs",
               "RelativeDocumentMoniker": "LmsProject\\Models\\CourseViewModel.cs",
@@ -223,7 +255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "LmsProject\\Views\\Shared\\_Layout.cshtml",
@@ -235,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "20260608054736_AddLmsTables.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Data\\Migrations\\20260608054736_AddLmsTables.cs",
               "RelativeDocumentMoniker": "LmsProject\\Data\\Migrations\\20260608054736_AddLmsTables.cs",
@@ -247,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "LmsProject\\Data\\ApplicationDbContext.cs",
@@ -259,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\IMRAN\\Desktop\\bs23attachment\\LmsProject\\LmsProject\\appsettings.json",
               "RelativeDocumentMoniker": "LmsProject\\appsettings.json",

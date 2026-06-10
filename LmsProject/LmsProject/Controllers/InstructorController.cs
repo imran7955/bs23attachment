@@ -48,7 +48,6 @@ namespace LmsProject.Controllers
         {
             ViewBag.Instructors = await _context.Instructors.ToListAsync();
 
-            // Hardcoded dynamic list of standard structural development domains for your dropdown
             ViewBag.Domains = new List<string>
             {
                 ".NET Development",
@@ -68,7 +67,6 @@ namespace LmsProject.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Link selected instructors from checkboxes to this course
                 if (selectedInstructors != null)
                 {
                     foreach (var id in selectedInstructors)
@@ -90,15 +88,21 @@ namespace LmsProject.Controllers
             return View(course);
         }
 
-        // 5. GET: Instructor/ManageSyllabus/{id}
-        public async Task<IActionResult> ManageSyllabus(int id)
+        // 5. UNIFIED GET: Instructor/EditCourse/{id}
+        // This single method now reads all data safely without duplication conflicts
+        public async Task<IActionResult> EditCourse(int id)
         {
             var course = await _context.Courses
+                .Include(c => c.Instructors)
                 .Include(c => c.CourseMaterials)
                     .ThenInclude(cm => cm.Material)
                 .FirstOrDefaultAsync(c => c.Id == id);
 
             if (course == null) return NotFound();
+
+            // Pre-loading your lookup data bags for safety
+            ViewBag.Domains = new List<string> { ".NET Development", "Machine Learning", "Graph Theory", "Web Development", "Competitive Programming" };
+            ViewBag.Instructors = await _context.Instructors.ToListAsync();
 
             return View(course);
         }
@@ -114,12 +118,10 @@ namespace LmsProject.Controllers
 
             if (course == null) return NotFound();
 
-            // Create new backing material instance
             var material = new Material { Title = title, YouTubeLink = url };
             _context.Materials.Add(material);
             await _context.SaveChangesAsync();
 
-            // Create explicit tracking mapping row
             var courseMaterial = new CourseMaterial
             {
                 CourseId = courseId,
@@ -130,7 +132,7 @@ namespace LmsProject.Controllers
             _context.CourseMaterials.Add(courseMaterial);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(ManageSyllabus), new { id = courseId });
+            return RedirectToAction(nameof(EditCourse), new { id = courseId });
         }
 
         // 7. POST: Instructor/RemoveMaterial
@@ -145,14 +147,105 @@ namespace LmsProject.Controllers
             {
                 _context.CourseMaterials.Remove(trackingRow);
 
-                // Also clean up the orphaned material block
                 var material = await _context.Materials.FindAsync(materialId);
                 if (material != null) _context.Materials.Remove(material);
 
                 await _context.SaveChangesAsync();
             }
 
-            return RedirectToAction(nameof(ManageSyllabus), new { id = courseId });
+            return RedirectToAction(nameof(EditCourse), new { id = courseId });
+        }
+
+        // 8. POST: Instructor/SaveBulkSyllabus
+        [HttpPost]
+        public async Task<IActionResult> SaveBulkSyllabus([FromBody] BulkSyllabusSubmissionModel submission)
+        {
+            if (submission == null || submission.CourseId <= 0)
+            {
+                return BadRequest("Invalid mapping parameters framework packet.");
+            }
+
+            var course = await _context.Courses
+                .Include(c => c.CourseMaterials)
+                .FirstOrDefaultAsync(c => c.Id == submission.CourseId);
+
+            if (course == null)
+            {
+                return NotFound("Targeted course validation ID frame missing.");
+            }
+
+            if (course.CourseMaterials.Any())
+            {
+                _context.CourseMaterials.RemoveRange(course.CourseMaterials);
+            }
+
+            if (submission.Materials != null && submission.Materials.Any())
+            {
+                foreach (var incomingItem in submission.Materials)
+                {
+                    var materialRecord = new Material
+                    {
+                        Title = incomingItem.Title,
+                        YouTubeLink = incomingItem.YouTubeLink
+                    };
+
+                    _context.Materials.Add(materialRecord);
+                    await _context.SaveChangesAsync();
+
+                    var joinRecord = new CourseMaterial
+                    {
+                        CourseId = course.Id,
+                        MaterialId = materialRecord.Id,
+                        Position = incomingItem.Position
+                    };
+
+                    _context.CourseMaterials.Add(joinRecord);
+                }
+            }
+
+            await _context.SaveChangesAsync();
+            return Ok();
+        }
+
+        // 9. POST: Instructor/EditCourse/1 (Saves general info)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> EditCourse(int id, Course updatedCourse, int[] selectedInstructors)
+        {
+            if (id != updatedCourse.Id)
+            {
+                return BadRequest();
+            }
+
+            var courseToUpdate = await _context.Courses
+                .Include(c => c.Instructors)
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (courseToUpdate == null)
+            {
+                return NotFound();
+            }
+
+            courseToUpdate.Title = updatedCourse.Title;
+            courseToUpdate.Domain = updatedCourse.Domain;
+            courseToUpdate.Description = updatedCourse.Description;
+
+            courseToUpdate.Instructors.Clear();
+
+            if (selectedInstructors != null)
+            {
+                foreach (var instId in selectedInstructors)
+                {
+                    var instructor = await _context.Instructors.FindAsync(instId);
+                    if (instructor != null)
+                    {
+                        courseToUpdate.Instructors.Add(instructor);
+                    }
+                }
+            }
+
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Dashboard");
         }
     }
 }

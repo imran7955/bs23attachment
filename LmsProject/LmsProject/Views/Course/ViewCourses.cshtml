@@ -1,62 +1,50 @@
 ﻿@model LmsProject.Models.CourseViewModel
 
 @{
-    ViewData["Title"] = "View Courses";
+    ViewData["Title"] = "Available Courses";
 }
 
 <style>
-    .dual-pane-layout {
-        display: flex;
-        gap: 24px;
-        margin-top: 20px;
-    }
-    /* Left Panel: Takes up roughly 70% of horizontal layout */
-    .left-course-pane {
-        flex: 7;
-    }
-    /* Right Panel: Takes up roughly 30% of horizontal layout and sticks below navbar */
-    .right-material-pane {
-        flex: 3;
-        position: sticky;
-        top: 95px;
-        height: calc(100vh - 140px);
-        overflow-y: auto;
-    }
-
     .course-item-card {
         cursor: pointer;
-        transition: transform 0.2s, box-shadow 0.2s;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
         border: 1px solid #e2e8f0;
-        border-radius: 8px;
+        border-radius: 12px;
         background-color: #ffffff;
     }
 
         .course-item-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             border-color: #cbd5e1;
         }
-    /* Highlights the selected card with an elegant blue border indicator */
-    .active-selected-card {
-        border-left: 5px solid #0d6efd !important;
-        background-color: #f8fafc;
+
+    .description-truncated {
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        line-height: 1.5;
+        font-size: 0.875rem;
+        white-space: pre-line;
     }
 
-    .syllabus-row {
-        border-bottom: 1px solid #f1f5f9;
-        padding: 12px 0;
+    .more-link-accent {
+        color: #0d6efd;
+        font-weight: 600;
+        font-size: 0.85rem;
+        text-decoration: none;
     }
 
-        .syllabus-row:last-child {
-            border-bottom: none;
+        .more-link-accent:hover {
+            text-decoration: underline;
         }
 </style>
 
-<div class="container-fluid">
+<div class="container-fluid px-4">
     <h3 class="mb-4 text-dark fw-bold font-monospace">Available Courses</h3>
 
     <form method="get" action="@Url.Action("ViewCourses", "Course")" class="row g-3 align-items-center bg-white p-3 rounded border shadow-sm mb-4">
-
         <div class="col-md-4">
             <label class="form-label fw-bold text-muted small mb-1">Course Domain</label>
             <select name="domain" class="form-select" onchange="this.form.submit()">
@@ -88,112 +76,57 @@
         </div>
     </form>
 
-    <div class="dual-pane-layout">
-
-        <div class="left-course-pane">
-            @if (!Model.Courses.Any())
+    @if (!Model.Courses.Any())
+    {
+        <div class="alert alert-secondary text-center py-5">No tracks or active courses match your chosen filter fields.</div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var course in Model.Courses)
             {
-                <div class="alert alert-secondary text-center py-5">No tracks or active courses match your chosen filter fields.</div>
-            }
-            else
-            {
-                <div class="row row-cols-1 row-cols-md-2 g-3">
-                    @foreach (var course in Model.Courses)
-                    {
-                        <div class="col">
-                            <div class="card h-100 course-item-card p-3 shadow-sm"
-                                 onclick="loadSyllabusPane(this)"
-                                 data-course-title="@course.Title"
-                                 data-materials='@Json.Serialize(course.CourseMaterials.OrderBy(cm => cm.Position).Select(cm => new { title = cm.Material.Title, url = cm.Material.YouTubeLink, position = cm.Position }))'>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 course-item-card p-4 shadow-sm d-flex flex-column"
+                         onclick="location.href='@Url.Action("Details", "Course", new { id = course.Id })'">
 
-                                <div class="card-body p-0">
-                                    <div class="text-uppercase tracking-wider font-monospace text-primary fw-bold mb-1" style="font-size: 0.75rem;">
-                                        ■ @course.Domain
-                                    </div>
-                                    <h5 class="card-title text-dark fw-bold mb-2">@course.Title</h5>
+                        <div class="card-body p-0 d-flex flex-column h-100">
+                            <div class="text-uppercase tracking-wider font-monospace text-primary fw-bold mb-2" style="font-size: 0.75rem;">
+                                ■ @course.Domain
+                            </div>
 
-                                    @if (!string.IsNullOrEmpty(course.Description))
-                                    {
-                                        <p class="text-muted small mb-3" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.4; font-size: 0.85rem; white-space: pre-line">
-                                            @course.Description
-                                        </p>
-                                    }
-                                    else
-                                    {
-                                        <p class="text-muted opacity-50 small mb-3 font-monospace" style="font-size: 0.75rem; font-style: italic;">No course overview details added yet.</p>
-                                    }
+                            <h5 class="card-title text-dark fw-bold mb-3">@course.Title</h5>
 
-                                    <div class="mt-3 pt-2 border-top">
-                                        <span class="text-muted d-block small mb-1 fw-semibold">Instructors:</span>
-                                        @foreach (var inst in course.Instructors)
-                                        {
-                                            <a href="@Url.Action("ViewCourses", "Course", new { instructor = inst.Name, domain = "All" })"
-                                               target="_blank"
-                                               class="btn btn-sm btn-light border text-dark me-1 my-1 px-2 py-0"
-                                               style="font-size: 0.8rem;"
-                                               onclick="event.stopPropagation();">
-                                                👤 @inst.Name
-                                            </a>
-                                        }
-                                    </div>
+                            @if (!string.IsNullOrEmpty(course.Description))
+                            {
+                                <div class="text-muted mb-2 description-truncated">
+                                    @course.Description
                                 </div>
+                                <div class="mb-3">
+                                    <span class="more-link-accent">... More</span>
+                                </div>
+                            }
+                            else
+                            {
+                                <p class="text-muted opacity-50 small mb-4 font-monospace" style="font-size: 0.75rem; font-style: italic;">No course overview details added yet.</p>
+                            }
+
+                            <div class="mt-auto pt-3 border-top">
+                                <span class="text-muted d-block small mb-1 fw-semibold">Instructors:</span>
+                                @foreach (var inst in course.Instructors)
+                                {
+                                    <a href="@Url.Action("ViewCourses", "Course", new { instructor = inst.Name, domain = "All" })"
+                                       target = "_blank"
+                                       class="btn btn-sm btn-light border text-dark me-1 my-1 px-2 py-0 fw-medium"
+                                       style="font-size: 0.8rem; transition: background-color 0.2s;"
+                                       onclick="event.stopPropagation();">
+                                        👤 @inst.Name
+                                    </a>
+                                }
                             </div>
                         </div>
-                    }
+                    </div>
                 </div>
             }
         </div>
-
-        <div class="right-material-pane card border shadow-sm p-4 bg-white" id="liveSyllabusOutputView">
-            <div class="text-center my-auto text-muted py-5">
-                <p class="mb-1 fw-bold fs-5 text-secondary">No Course Selected</p>
-                <p class="small text-muted px-3">Select any course card on the left pane to dynamically view its structural video materials list here.</p>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<script>
-    function loadSyllabusPane(selectedCard) {
-        // Clear active borders across all structural card siblings
-        document.querySelectorAll('.course-item-card').forEach(card => card.classList.remove('active-selected-card'));
-        selectedCard.classList.add('active-selected-card');
-
-        // Extract metadata properties from targeted dataset attributes
-        const courseTitle = selectedCard.getAttribute('data-course-title');
-        const materialsArray = JSON.parse(selectedCard.getAttribute('data-materials'));
-
-        const outputContainer = document.getElementById('liveSyllabusOutputView');
-
-        if (!materialsArray || materialsArray.length === 0) {
-            outputContainer.innerHTML = `
-                <h4 class="fw-bold text-dark border-bottom pb-2 mb-3">${courseTitle}</h4>
-                <div class="alert alert-warning p-3 small text-dark mt-2">No educational video material rows mapped to this track path yet.</div>`;
-            return;
-        }
-
-        // Loop items out into explicit list rows
-        let finalRowsHtml = '';
-        materialsArray.forEach(item => {
-            finalRowsHtml += `
-                <div class="syllabus-row">
-                    <div class="d-flex align-items-start">
-                        <span class="badge bg-secondary rounded-pill me-2 px-2 mt-1" style="font-size: 0.7rem; min-width: 22px;">#${item.position}</span>
-                        <div>
-                            <h6 class="mb-1 text-dark fw-bold font-monospace" style="font-size: 0.9rem;">${item.title}</h6>
-                            <a href="${item.url}" target="_blank" class="btn btn-sm btn-danger py-0 px-2 d-inline-flex align-items-center mt-1" style="font-size: 0.75rem;">
-                                 Watch Video
-                            </a>
-                        </div>
-                    </div>
-                </div>`;
-        });
-
-        // Write the dynamically constructed HTML rows back into the panel view
-        outputContainer.innerHTML = `
-            <h4 class="fw-bold text-primary mb-1">${courseTitle}</h4>
-            <p class="text-muted small fw-semibold pb-2 border-bottom">Syllabus Flow Sequence</p>
-            <div style="overflow-y: auto; max-height: calc(100% - 60px); padding-right: 4px;">${finalRowsHtml}</div>`;
     }
-</script>
+</div>

@@ -60,5 +60,23 @@ namespace LmsProject.Controllers
 
             return View(viewModel);
         }
+
+        // GET: Course/Details/5
+        public async Task<IActionResult> Details(int id)
+        {
+            var course = await _context.Courses
+                .Include(c => c.Instructors)
+                .Include(c => c.CourseMaterials)
+                    .ThenInclude(cm => cm.Material)
+                .FirstOrDefaultAsync(c => c.Id == id);
+
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            // Explicitly renders your custom-named view file while passing down the data model
+            return View(course);
+        }
     }
 }
