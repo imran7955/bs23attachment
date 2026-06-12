@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.AspNetCore.Authorization;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +9,7 @@ using LmsProject.Web.Models;
 
 namespace LmsProject.Web.Controllers
 {
+    [Authorize(Roles = "Admin,Instructor")]
     public class InstructorController : Controller
     {
         private readonly IInstructorService _instructorService;

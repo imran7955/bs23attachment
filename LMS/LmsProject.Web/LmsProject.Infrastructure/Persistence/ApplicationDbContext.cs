@@ -1,9 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using LmsProject.Domain.Entities;
 
 namespace LmsProject.Infrastructure.Persistence
 {
-    public class ApplicationDbContext : DbContext
+    // FIXED: Inherit from IdentityDbContext<IdentityUser> to support secure identity tables
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
@@ -16,6 +19,7 @@ namespace LmsProject.Infrastructure.Persistence
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // CRITICAL: Keeps Identity tables configurations initialized cleanly
             base.OnModelCreating(modelBuilder);
 
             // Configure Many-to-Many Join Table for Course and Material with Position tracking

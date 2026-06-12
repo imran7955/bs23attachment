@@ -2,6 +2,7 @@ using LmsProject.Application.Services;
 using LmsProject.Domain.Repositories;
 using LmsProject.Infrastructure.Persistence;
 using LmsProject.Infrastructure.Repositories;
+using LmsProject.Web;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,17 +10,31 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
-
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+// FIXED: Converted to AddIdentity and added AddRoles<IdentityRole>() to explicitly support RBAC
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = false; // Set to false for easier development/testing
+    options.Password.RequireDigit = false;
+    options.Password.RequiredLength = 4;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = false;
+})
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
+// Configure Application Cookie redirection parameters securely
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login";       // Where users go if not logged in
+    options.AccessDeniedPath = "/Account/AccessDenied"; // Where users go if they don't have the right Role
+});
 
 builder.Services.AddControllersWithViews();
-
 
 // ============================================================================
 //  Clean Architecture Dependency Injections
@@ -34,7 +49,6 @@ builder.Services.AddScoped<ICourseService, CourseService>();
 builder.Services.AddScoped<IInstructorService, InstructorService>();
 // ============================================================================
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -45,13 +59,16 @@ if (app.Environment.IsDevelopment())
 else
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseRouting();
+
+// CRITICAL PIPELINE ORDER: Authentication MUST run right before Authorization
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapStaticAssets();
 
 app.MapControllerRoute(
@@ -59,7 +76,29 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
-app.MapRazorPages()
-   .WithStaticAssets();
+//app.MapRazorPages().WithStaticAssets();
+
+
+
+
+
+
+
+// ... your existing setup up to app.MapRazorPages()
+
+// FIXED: Seed database security roles before running the application
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        await DataSeeder.SeedRolesAndAdminAsync(services);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred while seeding security roles.");
+    }
+}
 
 app.Run();
