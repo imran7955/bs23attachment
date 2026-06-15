@@ -11,47 +11,10 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4 mb-4">
-            <div class="card shadow-sm border">
-                <div class="card-header bg-dark text-white fw-bold">
-                    Quick Register: Instructor
-                </div>
-                <div class="card-body">
-                    <form method="post" action="@Url.Action("CreateInstructor", "Instructor")">
-                        @Html.AntiForgeryToken()
-                        <div class="mb-3">
-                            <label class="form-label small fw-bold text-muted">Instructor Full Name</label>
-                            <input type="text" name="Name" class="form-control" placeholder="e.g. Dr. Jane Doe" required />
-                        </div>
-                        <button type="submit" class="btn btn-outline-dark w-100 fw-bold">Save Instructor</button>
-                    </form>
-
-                    <hr class="my-3" />
-
-                    <h6 class="fw-bold text-secondary mb-2 small text-uppercase font-monospace">Registered Faculty</h6>
-                    <div style="max-height: 200px; overflow-y: auto;">
-                        @if (!Model.Instructors.Any())
-                        {
-                            <span class="text-muted small">No instructors registered yet.</span>
-                        }
-                        else
-                        {
-                            <ul class="list-group list-group-flush small">
-                                @foreach (var inst in Model.Instructors)
-                                {
-                                    <li class="list-group-item px-0 py-1">👤 @inst.Name</li>
-                                }
-                            </ul>
-                        }
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card shadow-sm border">
                 <div class="card-header bg-light fw-bold text-secondary">
-                    Active Academic Courses
+                    @(User.IsInRole("Admin") ? "Active Academic Courses (Global Index)" : "My Assigned Active Courses")
                 </div>
                 <div class="card-body p-0">
                     @if (!Model.Courses.Any())

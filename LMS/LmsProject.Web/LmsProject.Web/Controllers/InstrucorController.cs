@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Identity; 
+using System.Security.Claims;        
 using LmsProject.Application.Services;
 using LmsProject.Domain.Entities;
 using LmsProject.Web.Models;
@@ -14,15 +16,87 @@ namespace LmsProject.Web.Controllers
     {
         private readonly IInstructorService _instructorService;
         private readonly ICourseService _courseService;
+        private readonly UserManager<IdentityUser> _userManager; 
 
-        public InstructorController(IInstructorService instructorService, ICourseService courseService)
+        public InstructorController(
+            IInstructorService instructorService, 
+            ICourseService courseService,
+            UserManager<IdentityUser> userManager)
         {
             _instructorService = instructorService;
             _courseService = courseService;
+            _userManager = userManager;
         }
 
         // GET: Instructor/Dashboard
         public async Task<IActionResult> Dashboard()
+        {
+            var courses = await _courseService.GetFilteredCoursesAsync("All", "All", "");
+            var instructors = await _instructorService.GetAllInstructorsAsync();
+
+            var courseList = courses.ToList();
+
+            // RBAC Isolation: Filter course collection if the authenticated entity is not an Administrator
+            if (!User.IsInRole("Admin"))
+            {
+                var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                
+                // Keep courses only if one of the assigned domain instructors contains our mapped identity key
+                courseList = courseList.Where(c => c.Instructors.Any(i => i.IdentityUserId == currentUserId)).ToList();
+            }
+
+            var model = new CourseViewModel
+            {
+                Courses = courseList,
+                Instructors = instructors.ToList(),
+                Domains = (await _courseService.GetFilterDomainsAsync()).ToList(),
+                SelectedDomain = "All",
+                SelectedInstructor = "All",
+                SearchTerm = string.Empty
+            };
+
+            return View(model);
+        }
+
+        // GET: Instructor/CreateInstructor 
+        [Authorize(Roles = "Admin")]
+        public IActionResult CreateInstructor()
+        {
+            return View();
+        }
+
+        // POST: Instructor/CreateInstructor 
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateInstructor(string name, string email, string password)
+        {
+            if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(email) || string.IsNullOrEmpty(password))
+            {
+                ModelState.AddModelError(string.Empty, "Name, Email, and Password details are all required inputs.");
+                return await ReloadDashboardViewWithErrors();
+            }
+
+            var identityUser = new IdentityUser { UserName = email, Email = email, EmailConfirmed = true };
+            var identityResult = await _userManager.CreateAsync(identityUser, password);
+
+            if (identityResult.Succeeded)
+            {
+                await _userManager.AddToRoleAsync(identityUser, "Instructor");
+                await _instructorService.RegisterInstructorAsync(name, identityUser.Id);
+
+                return RedirectToAction(nameof(Dashboard));
+            }
+
+            foreach (var error in identityResult.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
+            return await ReloadDashboardViewWithErrors();
+        }
+
+        private async Task<IActionResult> ReloadDashboardViewWithErrors()
         {
             var courses = await _courseService.GetFilteredCoursesAsync("All", "All", "");
             var instructors = await _instructorService.GetAllInstructorsAsync();
@@ -36,27 +110,7 @@ namespace LmsProject.Web.Controllers
                 SelectedInstructor = "All",
                 SearchTerm = string.Empty
             };
-
-            return View(model);
-        }
-
-        // GET: Instructor/CreateInstructor
-        public IActionResult CreateInstructor()
-        {
-            return View();
-        }
-
-        // POST: Instructor/CreateInstructor
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateInstructor(string name)
-        {
-            if (!string.IsNullOrEmpty(name))
-            {
-                await _instructorService.RegisterInstructorAsync(name);
-                return RedirectToAction(nameof(Dashboard));
-            }
-            return View();
+            return View("Dashboard", model);
         }
 
         // GET: Instructor/CreateCourse
@@ -98,6 +152,16 @@ namespace LmsProject.Web.Controllers
                 return NotFound();
             }
 
+            // FIXED: Only enforce course ownership validation if the logged-in user is NOT an Admin
+            if (!User.IsInRole("Admin"))
+            {
+                var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (!course.Instructors.Any(i => i.IdentityUserId == currentUserId))
+                {
+                    return RedirectToAction("AccessDenied", "Account");
+                }
+            }
+
             ViewBag.Domains = await _courseService.GetFilterDomainsAsync();
             ViewBag.Instructors = await _instructorService.GetAllInstructorsAsync();
             return View(course);
@@ -113,11 +177,21 @@ namespace LmsProject.Web.Controllers
                 return BadRequest("Invalid course tracking reference identifier context.");
             }
 
+            // FIXED: Only enforce course ownership validation if the logged-in user is NOT an Admin
+            if (!User.IsInRole("Admin"))
+            {
+                var courseCheck = await _courseService.GetCourseDetailsAsync(id);
+                var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (courseCheck == null || !courseCheck.Instructors.Any(i => i.IdentityUserId == currentUserId))
+                {
+                    return RedirectToAction("AccessDenied", "Account");
+                }
+            }
+
             if (!string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(domain))
             {
                 var instructorIds = selectedInstructors ?? new List<int>();
 
-                // CORESWAP FIX: Invoke the accurate updates layer endpoint instead of Register insertion routines
                 await _instructorService.UpdateCourseDetailsAsync(id, title, domain, description, instructorIds);
 
                 return RedirectToAction(nameof(Dashboard));
@@ -137,6 +211,17 @@ namespace LmsProject.Web.Controllers
             if (request == null || request.CourseId <= 0)
             {
                 return BadRequest("Invalid payload format mapping request.");
+            }
+
+            // FIXED: Only enforce course ownership validation if the logged-in user is NOT an Admin
+            if (!User.IsInRole("Admin"))
+            {
+                var courseCheck = await _courseService.GetCourseDetailsAsync(request.CourseId);
+                var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+                if (courseCheck == null || !courseCheck.Instructors.Any(i => i.IdentityUserId == currentUserId))
+                {
+                    return Forbid();
+                }
             }
 
             var applicationMaterialsList = request.Materials.Select(m => new LmsProject.Application.DTOs.SyllabusItemDto
@@ -163,4 +248,4 @@ namespace LmsProject.Web.Controllers
         public string YouTubeLink { get; set; } = string.Empty;
         public int Position { get; set; }
     }
-}
+}   

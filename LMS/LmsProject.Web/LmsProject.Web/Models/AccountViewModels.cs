@@ -15,6 +15,10 @@ namespace LmsProject.Web.Models
 
     public class RegisterViewModel
     {
+        [Required(ErrorMessage = "Please enter your full name.")]
+        [Display(Name = "Full Name")]
+        public string Name { get; set; } = string.Empty; // FIXED: Added to capture Instructor/Student profile name
+
         [Required, EmailAddress]
         public string Email { get; set; } = string.Empty;
 

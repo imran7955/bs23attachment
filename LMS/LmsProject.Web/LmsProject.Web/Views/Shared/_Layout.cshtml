@@ -42,9 +42,21 @@
                         <li class="nav-item">
                             <a class="nav-link text-white px-3" asp-area="" asp-controller="Course" asp-action="ViewCourses">View Courses</a>
                         </li>
-                        <li class="nav-item">
+                        @* <li class="nav-item">
                             <a class="nav-link text-white-50 px-3" asp-area="" asp-controller="Instructor" asp-action="Dashboard">Instructor Dashboard</a>
-                        </li>
+                        </li> *@
+                        @if (User.IsInRole("Admin") || User.IsInRole("Instructor"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white-50 px-3" asp-area="" asp-controller="Instructor" asp-action="Dashboard">Instructor Dashboard</a>
+                            </li>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white fw-bold px-3 opacity-75" style="color: #d55744 !important;" asp-area="" asp-controller="User" asp-action="SystemUsers">🛠 System Users</a>
+                            </li>
+                        }
                     </ul>
 
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">

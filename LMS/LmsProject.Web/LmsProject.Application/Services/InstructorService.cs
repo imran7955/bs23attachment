@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LmsProject.Application.DTOs;
@@ -28,9 +29,14 @@ namespace LmsProject.Application.Services
             return await _instructorRepository.GetAllInstructorsAsync();
         }
 
-        public async Task RegisterInstructorAsync(string name)
+        // Bridges authentication user identity key with your relational infrastructure table
+        public async Task RegisterInstructorAsync(string name, string identityUserId)
         {
-            var instructor = new Instructor { Name = name };
+            var instructor = new Instructor
+            {
+                Name = name,
+                IdentityUserId = identityUserId
+            };
             await _instructorRepository.AddInstructorAsync(instructor);
         }
 
@@ -63,7 +69,7 @@ namespace LmsProject.Application.Services
             var existingCourse = await _courseRepository.GetCourseByIdWithDetailsAsync(id);
             if (existingCourse == null) return;
 
-            // 1. Assign values to tracked domain core state property models
+            // 1. Assign values to tracked domain core state properties
             existingCourse.Title = title;
             existingCourse.Domain = domain;
             existingCourse.Description = description;
@@ -84,7 +90,6 @@ namespace LmsProject.Application.Services
                 }
             }
 
-            // FIXED PERSISTENCE CALL: Uses the new repository save pipeline method safely
             await _courseRepository.UpdateCourseAsync(existingCourse);
         }
 
@@ -126,6 +131,22 @@ namespace LmsProject.Application.Services
                     await _syllabusRepository.AddCourseMaterialLinkAsync(courseMaterialLink);
                 }
             }
+        }
+
+        // FIXED: Replaced raw _context dependencies with clean repository abstraction routing pipelines
+        public async Task CreateUserProfileAsync(string identityUserId, string fullName, string emailAddress, string accountType)
+        {
+            var customProfile = new UserProfile
+            {
+                IdentityUserId = identityUserId,
+                FullName = fullName,
+                EmailAddress = emailAddress,
+                AccountType = accountType,
+                RegisteredOn = DateTime.UtcNow
+            };
+
+            // Dispatches execution directly through your abstract infrastructure tier methods
+            await _instructorRepository.AddUserProfileAsync(customProfile);
         }
     }
 }

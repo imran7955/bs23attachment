@@ -17,6 +17,9 @@ namespace LmsProject.Infrastructure.Persistence
         public DbSet<Material> Materials { get; set; } = null!;
         public DbSet<CourseMaterial> CourseMaterials { get; set; } = null!;
 
+        public DbSet<UserProfile> UserProfiles { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // CRITICAL: Keeps Identity tables configurations initialized cleanly
