@@ -7,7 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using LmsProject.Application.Services; // Ensure this matches your service layer namespace
+using LmsProject.Application.Services;
+using LmsProject.Infrastructure.Persistence; // Ensure access to DbContext for profile lookups
 
 namespace LmsProject.Web.Controllers
 {
@@ -16,20 +17,21 @@ namespace LmsProject.Web.Controllers
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly IInstructorService _instructorService; // FIXED: Declared dependency field
+        private readonly IInstructorService _instructorService;
+        private readonly ApplicationDbContext _context; // Added for direct profile lookup
 
-        // FIXED: Injected IInstructorService explicitly into the constructor dependencies
         public UserController(
             UserManager<IdentityUser> userManager,
             RoleManager<IdentityRole> roleManager,
-            IInstructorService instructorService)
+            IInstructorService instructorService,
+            ApplicationDbContext context)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _instructorService = instructorService;
+            _context = context;
         }
 
-        // GET: User/SystemUsers
         public async Task<IActionResult> SystemUsers()
         {
             var allUsers = await _userManager.Users.ToListAsync();
@@ -50,7 +52,6 @@ namespace LmsProject.Web.Controllers
             return View(userListWithRoles);
         }
 
-        // POST: User/UpdateUserCredentials
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateUserCredentials(string userId, string email, string newPassword, string targetRole)
@@ -61,7 +62,7 @@ namespace LmsProject.Web.Controllers
                 return NotFound("Target user record context not found.");
             }
 
-            // 1. Update basic profile tracking structures
+            // 1. Update Identity User basic details
             user.Email = email;
             user.UserName = email;
             var updateResult = await _userManager.UpdateAsync(user);
@@ -72,7 +73,7 @@ namespace LmsProject.Web.Controllers
                 return await RedirectToSystemUsersWithErrors();
             }
 
-            // 2. Update Passwords securely if provided
+            // 2. Handle Password resets
             if (!string.IsNullOrEmpty(newPassword))
             {
                 var token = await _userManager.GeneratePasswordResetTokenAsync(user);
@@ -85,7 +86,7 @@ namespace LmsProject.Web.Controllers
                 }
             }
 
-            // 3. Update RBAC Role Assignment Groups
+            // 3. Update RBAC Roles
             var currentRoles = await _userManager.GetRolesAsync(user);
             if (!currentRoles.Contains(targetRole))
             {
@@ -93,10 +94,46 @@ namespace LmsProject.Web.Controllers
                 await _userManager.AddToRoleAsync(user, targetRole);
             }
 
+            // 4. SYNC LOGIC: Domain Table Maintenance
+            var existingProfile = await _context.UserProfiles
+                .FirstOrDefaultAsync(p => p.IdentityUserId == userId);
+
+            if (targetRole == "Instructor")
+            {
+                // Ensure they exist in the Instructors table
+                var allInstructors = await _instructorService.GetAllInstructorsAsync();
+                if (!allInstructors.Any(i => i.IdentityUserId == userId))
+                {
+                    // Use their actual name from UserProfiles, fallback to Email if profile missing
+                    string displayName = existingProfile?.FullName ?? email.Split('@')[0];
+                    await _instructorService.RegisterInstructorAsync(displayName, userId);
+                }
+            }
+            else
+            {
+                // If they are no longer an Instructor, remove them from the Instructor domain table
+                var instructorEntry = await _context.Instructors
+                    .FirstOrDefaultAsync(i => i.IdentityUserId == userId);
+
+                if (instructorEntry != null)
+                {
+                    _context.Instructors.Remove(instructorEntry);
+                    await _context.SaveChangesAsync();
+                }
+            }
+
+            // Update the general UserProfile AccountType to match the new role
+            if (existingProfile != null)
+            {
+                existingProfile.AccountType = targetRole;
+                existingProfile.EmailAddress = email; // Keep email in sync
+                _context.UserProfiles.Update(existingProfile);
+                await _context.SaveChangesAsync();
+            }
+
             return RedirectToAction(nameof(SystemUsers));
         }
 
-        // POST: User/CreateNewUser
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> CreateNewUser(string name, string email, string password, string targetRole)
@@ -112,15 +149,14 @@ namespace LmsProject.Web.Controllers
 
             if (identityResult.Succeeded)
             {
-                // 1. Assign chosen identity authentication security group level role
                 await _userManager.AddToRoleAsync(identityUser, targetRole);
 
                 string profileName = !string.IsNullOrEmpty(name) ? name : email.Split('@')[0];
 
-                // 2. Route profile saving through the service layer instead of direct context calls
+                // Create the master UserProfile
                 await _instructorService.CreateUserProfileAsync(identityUser.Id, profileName, email, targetRole);
 
-                // 3. If instructor role is chosen, map them to the instructor domain architecture table
+                // If Instructor, create the specialized table entry
                 if (targetRole == "Instructor")
                 {
                     await _instructorService.RegisterInstructorAsync(profileName, identityUser.Id);
